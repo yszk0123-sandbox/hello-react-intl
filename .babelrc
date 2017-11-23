@@ -1,7 +1,13 @@
 {
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    [
+      "react-intl",
+      {
+        "messagesDir": "./build/messages/"
+      }
+    ]
   ],
   "presets": [
     "@babel/preset-react",
