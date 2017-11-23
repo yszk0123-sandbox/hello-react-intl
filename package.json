@@ -14,8 +14,10 @@
     "analyze": "NODE_ENV=production webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "dependencies": {
+    "i18next": "^10.1.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-i18next": "^7.0.0",
     "react-intl": "^2.4.0"
   },
   "devDependencies": {
