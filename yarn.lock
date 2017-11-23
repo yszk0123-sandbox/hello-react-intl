@@ -3505,6 +3505,15 @@ react-dom@^16.1.1:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-intl-translations-manager@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-intl-translations-manager/-/react-intl-translations-manager-5.0.1.tgz#f0ef1a9368abcac3b10b2e8b6027887dced5474e"
+  dependencies:
+    chalk "^2.1.0"
+    glob "^7.1.2"
+    json-stable-stringify "^1.0.1"
+    mkdirp "^0.5.1"
+
 react-intl@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.4.0.tgz#66c14dc9df9a73b2fbbfbd6021726e80a613eb15"
