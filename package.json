@@ -16,6 +16,7 @@
   "dependencies": {
     "i18next": "^10.1.0",
     "lingui-react": "^1.4.1",
+    "node-polyglot": "^2.2.2",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-i18next": "^7.0.0",
