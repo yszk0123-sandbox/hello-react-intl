@@ -10,7 +10,8 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "lint": "eslint src",
-    "i18n:translate": "node ./scripts/translate.js"
+    "i18n:translate": "node ./scripts/translate.js",
+    "analyze": "NODE_ENV=production webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json"
   },
   "dependencies": {
     "react": "^16.1.1",
@@ -38,7 +39,9 @@
     "html-webpack-plugin": "^2.30.1",
     "prettier": "^1.8.2",
     "react-intl-translations-manager": "^5.0.1",
+    "uglifyjs-webpack-plugin": "^1.1.0",
     "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.1",
     "webpack-dev-server": "^2.9.4"
   }
 }

@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin');
 const pkg = require('./package.json');
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -33,7 +34,8 @@ module.exports = {
       title: pkg.name,
       template: './src/assets/index.html',
     }),
-  ],
+    isProduction && new UglifyJSWebpackPlugin(),
+  ].filter(Boolean),
   stats: {
     children: false,
   },
