@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const pkg = require('./package.json');
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -33,6 +34,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: pkg.name,
       template: './src/assets/index.html',
+    }),
+    new BundleAnalyzerPlugin({
+      analyzerPort: 3001,
+      openAnalyzer: false,
     }),
     isProduction && new UglifyJSWebpackPlugin(),
   ].filter(Boolean),
